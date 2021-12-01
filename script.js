@@ -1,13 +1,43 @@
-setTimeout(()=>{console.log('10')
-setTimeout(()=>{console.log('9')},1000)
-setTimeout(()=>{console.log('8')},2000)
-setTimeout(()=>{console.log('7')},3000)
-setTimeout(()=>{console.log('6')},4000)
-setTimeout(()=>{console.log('5')},5000)
-setTimeout(()=>{console.log('4')},6000)
-setTimeout(()=>{console.log('3')},7000)
-setTimeout(()=>{console.log('2')},8000)
-setTimeout(()=>{console.log('1')},9000)
-setTimeout(()=>{console.log('0')},10000)
-setTimeout(()=>{console.log('HAPPY INDEPENDANCE DAY')},11000)
-},1000)
+ 
+ window.onload = function() {
+
+ 
+ var txt = document.getElementById('text');
+    var msg = document.getElementById('msg');
+    msg.style.visibility = 'hidden';
+
+    txt.innerHTML = 10;
+    setTimeout(function() {
+        txt.innerHTML = 9;
+        setTimeout(function() {
+            txt.innerHTML = 8;
+            setTimeout(function() {
+                txt.innerHTML = 7;
+                setTimeout(function() {
+                    txt.innerHTML = 6;
+                    setTimeout(function() {
+                        txt.innerHTML = 5;
+                        setTimeout(function() {
+                            txt.innerHTML = 4;
+                            setTimeout(function() {
+                                txt.innerHTML = 3;
+                                setTimeout(function() {
+                                    txt.innerHTML = 2;
+                                    setTimeout(function() {
+                                        txt.innerHTML = 1;
+                                        setTimeout(function() {
+                                            msg.style.visibility = 'visible';
+                                            txt.style.visibility = 'hidden';
+                                        
+                                        }, 1000)
+                                    }, 1000)
+                                }, 1000)
+                            }, 1000)
+                        }, 1000)
+                    }, 1000)
+                }, 1000)
+            }, 1000)
+        }, 1000)
+    }, 1000)
+
+}
